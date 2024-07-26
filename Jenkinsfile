@@ -8,7 +8,7 @@ pipeline {
 stages{
         stage('Build'){
             steps {
-                sh 'cp index.html /usr/share/nginx/html'
+                sh 'zip -r html.zip *'
             }
           
         }
